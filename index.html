@@ -4,33 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="script.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
-    <title>Lenguajes de Programación</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <title>YouLight</title>
   </head>
   <body>
-    <header>
-      <nav>
+    <nav>
+      <div class="navbar-left">
+        <img src="/Imágenes/YOULIGTH.jpeg" alt="logo" class="logo" />
+      </div>
+      <div class="navbar-right">
         <ul>
-          <li>
-            <img
-              class="imgHeader"
-              src="./Imágenes/YOULIGTH.jpeg"
-              alt="YOULIGTH"
-            />
-          </li>
+          <li><a href="#">¿Quienes somos?</a></li>
+          <li><a href="#">Encuesta de satisfacción</a></li>
+          <li><a href="#">Contáctanos</a></li>
         </ul>
-        <ul class="rigt-section">
-          <li>Estructuración</li>
-          <li>Encuesta</li>
-          <li>Documentos</li>
-        </ul>
-      </nav>
-    </header>
+      </div>
+    </nav>
+    <section class="section-one">
+      <div class="container-section-one">
+        <h1><div class="section-one-info title">¿Qué es YouLigth?</div></h1>
+        <div class="section-one-info p">
+          <p>
+            YouLight, es un proyecto basado en la automatización del hogar, o
+            más conocido actualmente como domótica, con la diferencia de que su
+            función principal es dirigida hacia las luces y el ahorro de las
+            mismas. Todo se maneja y configura desde una aplicación móvil propia
+            del hardware.
+            <br /><br />
+            La funcionalidad parte del uso de un dispositivo conformado por
+            además de su propia tecnología, dos sensores; uno de movimiento y
+            uno de voz. El de movimiento cumple con el apartado de ahorro de
+            energía puesto que por un temporizador (Configurado por el usuario
+            desde la app) que una vez llegue al tiempo establecido, apagará las
+            luz que no detecte movimiento. Solucionando así el típico descuido de dejar luces encendidas. 
+            <br /><br />
+            El otro sensor, el de voz; tiene una funcionalidad más 'innovadora'
+            puesto que por medio de comandos de voz, se podrán hacer diferentes
+            actividades con las luces del hogar, como bien puede ser
+            encender/apagar o cambiar de color (Dependiendo del bombillo),
+            cambiar el tono de la luz. Esto además de estar automatizado, tendrá
+            la posibilidad de ser personalido, para que no importe la jerga/nacionalidad del
+            cliente.
+            <hr>
+            <span class="seeMore">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 330 330" xml:space="preserve" width="44" heigth="44" class="seeMoreArrow">
+                <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+                c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+                s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
+              </svg>
+            </span>
+          </p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
