@@ -13,14 +13,17 @@ svg:not(:root) {
   --black: #000000;
   --dark: #232830;
   --very-light-blue: #72a0da;
-  --text-input-field: #72a0da;
+  --very-light-blue2: #1e508d;
   --hospital-blue: #e1deff;
   --sm: 14px;
   --md: 16px;
   --lg: 18px;
   --bordes: 2px solid rgb(14, 72, 196);
   --sombras-one: 0.5px 0.5px 10px 0.4px #72a0da;
-  --sombras-two: 0px 3px 20px 2px #72a0da;
+  --sombras-two: 0px 3px 20px 2px #186bd1;
+  --section-one: #cadffb;
+  --section-two: #a0c5f7;
+  --sombras-hr: inset 0 12px 12px -12px var(--very-light-blue2);
 }
 
 .logo {
@@ -89,41 +92,105 @@ nav {
   background-color: var(--hospital-blue);
   top: 0px;
 }
+.section-one {
+  background-color: var(--section-one);
+  padding: 10rem 10rem 5rem 10rem;
+  z-index: 2;
+}
 
 .container-section-one {
-  margin: 10rem 9.5rem 10rem 9.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
+
 .title {
-  width: 240px;
+  width: 100%;
 }
-.p{
-  width: 500px;
+.p {
+  width: 100%;
   text-align: justify;
 }
-hr{
-  border-color: var(--very-light-blue);
+hr {
   margin-top: 15px;
   margin-bottom: -5px;
-
+  border: 0;
+  height: 12px;
+  box-shadow: var(--sombras-hr);
 }
 
-.seeMoreArrow{
+.seeMoreArrow,
+.seeLassArrow {
   fill: var(--very-light-blue);
   margin: 0;
   padding: 0;
 }
 
-.seeMore{
+#seeMore,
+#seeLess {
   display: flex;
-  flex-direction: row-reverse;
+  float: right;
   margin: 0;
   padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 2;
 }
 
 body {
   height: 1000px;
+}
+
+#seeMore {
+  display: none;
+}
+
+.ola-shape-fill {
+  fill: var(--section-one);
+}
+.ola-bottom-one {
+  background-color: var(--section-two);
+}
+.ola-bottom-one svg {
+  height: 40px;
+  width: 100%;
+}
+.section-two {
+  display: flex;
+  gap: 5rem;
+  padding: 5rem 10rem 5rem 10rem;
+  background-color: var(--section-two);
+}
+
+.section-two-one {
+  float: left;
+  width: 50%;
+}
+.section-two-two {
+  float: right;
+  width: 50%;
+}
+
+.section-right,
+.section-left {
+  padding: 0 2rem 0 2rem;
+}
+
+.section-two-one h1,
+.section-two-two h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.section-two-one h3,
+.section-two-two h3 {
+  padding: 2rem 0 1rem 0;
+  text-align: start;
+}
+.section-two-one p,
+.section-two-two p {
+  text-align: justify;
 }
