@@ -12,6 +12,7 @@ svg:not(:root) {
   --white: #ffffff;
   --black: #000000;
   --dark: #232830;
+  --very-light-green: rgb(172, 209, 172);
   --very-light-blue: #72a0da;
   --very-light-blue2: #1e508d;
   --hospital-blue: #e1deff;
@@ -19,6 +20,7 @@ svg:not(:root) {
   --md: 16px;
   --lg: 18px;
   --bordes: 2px solid rgb(14, 72, 196);
+  --bordes-two: 2px solid green;
   --sombras-one: 0.5px 0.5px 10px 0.4px #72a0da;
   --sombras-two: 0px 3px 20px 2px #186bd1;
   --section-one: #cadffb;
@@ -140,10 +142,6 @@ hr {
   z-index: 2;
 }
 
-body {
-  height: 1000px;
-}
-
 #seeMore {
   display: none;
 }
@@ -174,23 +172,112 @@ body {
   width: 50%;
 }
 
-.section-right,
-.section-left {
-  padding: 0 2rem 0 2rem;
-}
-
 .section-two-one h1,
 .section-two-two h1 {
   display: flex;
   justify-content: center;
 }
 
-.section-two-one h3,
-.section-two-two h3 {
-  padding: 2rem 0 1rem 0;
-  text-align: start;
+.section-two-one .section-right h3,
+.section-two-one .section-left h3 {
+  padding: 2rem 2rem 1rem 2rem;
 }
+
 .section-two-one p,
 .section-two-two p {
   text-align: justify;
+}
+
+.columns {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  border: var(--bordes);
+  justify-content: center;
+  align-items: center;
+}
+
+.columns li {
+  width: 33%;
+  font-size: 1.1em;
+  text-align: center;
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--very-light-blue);
+}
+
+.columns li:nth-child(2) {
+  border-right: var(--bordes);
+  border-left: var(--bordes);
+  width: 34%;
+}
+
+.second {
+  border-top: none;
+  font-size: 0.9em;
+  font-weight: 400;
+  height: auto;
+}
+
+.second li {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.3rem;
+  background-color: var(--very-light-green);
+}
+
+.third {
+  background-color: rgb(219, 189, 189);
+}
+
+.third li {
+  height: auto;
+  background-color: rgb(219, 189, 189);
+}
+
+.table .third:nth-child(3) li {
+  height: 3.4em;
+}
+
+.table .third:nth-child(4) li {
+  height: 4.2em;
+}
+
+.table .third:nth-last-child(1) li:nth-child(1) {
+  border-bottom-left-radius: 1rem;
+}
+.table .third:nth-last-child(1) li:nth-last-child(1) {
+  border-bottom-right-radius: 1rem;
+}
+
+.table .third:nth-last-child(1) {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+#hideShowTable,
+#showShowTable {
+  float: right;
+  height: auto;
+  margin-top: 1.2em;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border: var(--bordes);
+  border-radius: 10px;
+  background-color: var(--very-light-blue2);
+  color: var(--white);
+  font-size: 0.9em;
+  cursor: pointer;
+  box-shadow: var(--sombras-one);
+}
+
+#hideShowTable:hover {
+  font-weight: 500;
+  background-color: var(--very-light-blue);
+  transition: all 2s;
+}
+
+#hideShowTable {
+  display: none;
 }

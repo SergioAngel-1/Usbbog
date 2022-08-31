@@ -9,3 +9,11 @@ function hideText() {
   document.getElementById("seeLess").style.display = "none";
   document.getElementById("seeMore").style.display = "block";
 }
+
+function hideTable() {
+  document.getElementById("hideTable").style.display = "none";
+}
+
+function showTable() {
+  document.getElementById("hideTable").style.display = "flex";
+}

@@ -175,12 +175,54 @@
             </p>
           </div>
         </div>
-        <div class="section-two-two">
+        <div class="section-two-one">
           <h1 class="h1-section-two">Documentación</h1>
           <hr />
           <div class="section-right">
-            <h3>Cuadro de necesidades</h3>
-            <p></p>
+            <h3>Cuadro de necesidades y posibles alternativas</h3>
+            <div class="table">
+              <ul class="columns primary">
+                <li>Necesidad</li>
+                <li>Solución</li>
+                <li>Mercado</li>
+              </ul>
+              <ul class="columns second">
+                <li>Luz</li>
+                <li>Domótica</li>
+                <li>Factible, costoso</li>
+              </ul>
+              <ul class="columns second third">
+                <li>Alimentación</li>
+                <li>Delivery de donaciones</li>
+                <li>Factible, costoso, demorado</li>
+              </ul>
+              <ul class="columns second third">
+                <li>Seguridad</li>
+                <li>Cámaras con reconocimiento facial</li>
+                <li>Factible, costoso</li>
+              </ul>
+              <ul class="columns second third" id="hideTable">
+                <li>Transporte</li>
+                <li>
+                  Sistema automatizado para mejorar la congestión vehícular
+                </li>
+                <li>Factible, costoso</li>
+              </ul>
+            </div>
+            <button
+              name="showShowTable"
+              id="showShowTable"
+              onclick="showTable()"
+            >
+              Mostrar las alternativas descartadas
+            </button>
+            <button
+              name="hideShowTable"
+              id="hideShowTable"
+              onclick="hideTable()"
+            >
+              Ocultar las alternativas descartadas
+            </button>
           </div>
         </div>
       </section>
