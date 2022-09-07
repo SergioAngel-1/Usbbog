@@ -9,11 +9,14 @@ function hideText() {
   document.getElementById("seeLess").style.display = "none";
   document.getElementById("seeMore").style.display = "block";
 }
-
-function hideTable() {
-  document.getElementById("hideTable").style.display = "none";
+function showTable() {
+  document.getElementById("elementsHide").style.display = "block";
+  document.getElementById("hideShowTable").style.display = "flex";
+  document.getElementById("showShowTable").style.display = "none";
 }
 
-function showTable() {
-  document.getElementById("hideTable").style.display = "flex";
+function hideTable() {
+  document.getElementById("elementsHide").style.display = "none";
+  document.getElementById("hideShowTable").style.display = "none";
+  document.getElementById("showShowTable").style.display = "block";
 }

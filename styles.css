@@ -178,9 +178,10 @@ hr {
   justify-content: center;
 }
 
-.section-two-one .section-right h3,
-.section-two-one .section-left h3 {
-  padding: 2rem 2rem 1rem 2rem;
+.section-two-two .section-right h3,
+.section-two-one .section-left h3,
+.section-three-one {
+  padding: 2rem 2rem 1rem 0rem;
 }
 
 .section-two-one p,
@@ -270,8 +271,11 @@ hr {
   font-size: 0.9em;
   cursor: pointer;
   box-shadow: var(--sombras-one);
+  margin-bottom: 3rem;
+  margin-left: 9rem;
 }
 
+#showShowTable:hover,
 #hideShowTable:hover {
   font-weight: 500;
   background-color: var(--very-light-blue);
@@ -280,4 +284,37 @@ hr {
 
 #hideShowTable {
   display: none;
+}
+
+#elementsHide {
+  display: none;
+}
+
+.li-restrictions span,
+.li-solutions span {
+  color: var(--black);
+}
+
+.li-restrictions,
+.li-solutions {
+  text-align: justify;
+}
+
+ul .li-restrictions:nth-child(1) {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.ul-restrictions,
+.ul-solutions {
+  padding-left: 2rem;
+  color: var(--very-light-blue2);
+}
+
+b {
+  color: var(--very-light-blue2);
+}
+
+.li-solutions {
+  padding-bottom: 0.7rem;
 }
