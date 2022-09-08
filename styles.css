@@ -93,6 +93,7 @@ nav {
   width: 100%;
   background-color: var(--hospital-blue);
   top: 0px;
+  z-index: 100000000000000;
 }
 .section-one {
   background-color: var(--section-one);
@@ -317,4 +318,128 @@ b {
 
 .li-solutions {
   padding-bottom: 0.7rem;
+}
+
+/*Fuerzas de porter*/
+
+.top-container {
+  display: flex;
+  gap: 20px;
+}
+
+.diagrama {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.diagrama div {
+  border-radius: 15px;
+}
+
+.proveedores {
+  border: 2px solid orange;
+  padding: 2%;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 210px;
+  background-color: rgba(255, 205, 111, 0.486);
+}
+.proveedores h4 {
+  border-bottom: 2px dashed orange;
+  text-align: center;
+  padding-bottom: 5px;
+}
+.proveedores p {
+  text-align: justify;
+  vertical-align: center;
+}
+
+.sustitutos {
+  border: 2px solid red;
+  padding: 2%;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 210px;
+  background-color: rgba(253, 136, 136, 0.486);
+}
+
+.sustitutos h4 {
+  border-bottom: 2px dashed red;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.sustitutos p {
+  text-align: justify;
+}
+
+.clientes {
+  border: 2px solid green;
+  padding: 2%;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 210px;
+  background-color: rgba(170, 243, 170, 0.486);
+}
+
+.clientes h4 {
+  border-bottom: 2px dashed green;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.clientes p {
+  text-align: justify;
+}
+
+.competidores {
+  border: 2px solid gray;
+  padding: 2%;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 210px;
+  background-color: rgba(212, 212, 212, 0.486);
+}
+
+.competidores h4 {
+  border-bottom: 2px dashed gray;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.competidores p {
+  text-align: justify;
+}
+
+.rivalidad {
+  border: 2px solid var(--very-light-blue2);
+  padding: 2%;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+  background-color: #83b5f17e;
+}
+
+.rivalidad h4 {
+  border-bottom: 2px dashed var(--very-light-blue2);
+  text-align: center;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.rivalidad p {
+  text-align: justify;
+  padding-top: 7px;
 }
