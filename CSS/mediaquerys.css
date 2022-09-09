@@ -1,0 +1,8 @@
+@media (max-width: 1200px) {
+  .section-two-two {
+    display: none;
+  }
+  .section-two-one {
+    width: 100%;
+  }
+}
