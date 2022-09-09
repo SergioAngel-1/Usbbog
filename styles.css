@@ -191,7 +191,10 @@ hr {
   text-align: justify;
   hyphens: auto;
 }
-
+.primary {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
 .columns {
   display: flex;
   width: 100%;
@@ -199,6 +202,7 @@ hr {
   border: var(--bordes);
   justify-content: center;
   align-items: center;
+  background-color: var(--very-light-blue);
 }
 
 .columns li {
@@ -207,7 +211,7 @@ hr {
   text-align: center;
   font-weight: 500;
   color: var(--white);
-  background-color: var(--very-light-blue);
+  background-color: transparent;
 }
 
 .columns li:nth-child(2) {
@@ -332,6 +336,7 @@ b {
   display: flex;
   gap: 20px;
   justify-content: center;
+  width: 100%;
 }
 
 .diagrama div {
@@ -451,4 +456,71 @@ b {
 
 .ul-investigacion {
   padding-left: 4rem;
+}
+
+.li-second {
+  list-style-type: circle;
+}
+.div-li-second {
+  padding-left: 2rem;
+}
+
+/*Requerimientos funcionales y no funcionales*/
+.requerimientos {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid var(--very-light-blue2);
+  background-color: var(--very-light-blue);
+  width: 100%;
+}
+
+.li-requerimientos {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  background-color: transparent;
+  width: 100%;
+  color: white;
+}
+.requerimientos li span {
+  text-align: center;
+  font-size: 15px;
+}
+.requerimientos li:nth-child(1) {
+  border-right: 2px solid var(--very-light-blue2);
+}
+.requerimientos-ul-second {
+  border-top: none;
+  background-color: var(--very-light-green);
+}
+.requerimientos-ul-second li {
+  color: black;
+}
+
+.requerimientos-ul-second li span {
+  text-align: justify;
+  font-size: 12px;
+}
+
+.justify {
+  background-color: rgba(253, 136, 136, 0.486);
+}
+
+.justify li span b {
+  color: var(--black);
+}
+
+.requerimientos-last {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.requerimientos-first {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
