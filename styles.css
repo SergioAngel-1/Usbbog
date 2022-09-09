@@ -3,6 +3,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  hyphens: auto;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -188,6 +189,7 @@ hr {
 .section-two-one p,
 .section-two-two p {
   text-align: justify;
+  hyphens: auto;
 }
 
 .columns {
@@ -234,9 +236,16 @@ hr {
   background-color: rgb(219, 189, 189);
 }
 
+.third:hover {
+  background-color: rgb(235, 160, 160);
+  transition: all 0.5s;
+}
+.elementsHide a {
+  text-decoration: none;
+}
 .third li {
   height: auto;
-  background-color: rgb(219, 189, 189);
+  background-color: transparent;
 }
 
 .table .third:nth-child(3) li {
@@ -247,14 +256,11 @@ hr {
   height: 4.2em;
 }
 
-.table .third:nth-last-child(1) li:nth-child(1) {
-  border-bottom-left-radius: 1rem;
-}
 .table .third:nth-last-child(1) li:nth-last-child(1) {
   border-bottom-right-radius: 1rem;
 }
 
-.table .third:nth-last-child(1) {
+.table .last {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
@@ -280,7 +286,7 @@ hr {
 #hideShowTable:hover {
   font-weight: 500;
   background-color: var(--very-light-blue);
-  transition: all 2s;
+  transition: all 1s;
 }
 
 #hideShowTable {
@@ -325,11 +331,6 @@ b {
 .top-container {
   display: flex;
   gap: 20px;
-}
-
-.diagrama {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -344,17 +345,13 @@ b {
   display: flex;
   flex-wrap: wrap;
   width: 200px;
-  height: 210px;
+  height: 200px;
   background-color: rgba(255, 205, 111, 0.486);
 }
 .proveedores h4 {
-  border-bottom: 2px dashed orange;
   text-align: center;
+  border-bottom: 2px dashed orange;
   padding-bottom: 5px;
-}
-.proveedores p {
-  text-align: justify;
-  vertical-align: center;
 }
 
 .sustitutos {
@@ -364,7 +361,7 @@ b {
   display: flex;
   flex-wrap: wrap;
   width: 200px;
-  height: 210px;
+  height: 200px;
   background-color: rgba(253, 136, 136, 0.486);
 }
 
@@ -374,10 +371,6 @@ b {
   padding-bottom: 5px;
 }
 
-.sustitutos p {
-  text-align: justify;
-}
-
 .clientes {
   border: 2px solid green;
   padding: 2%;
@@ -385,18 +378,14 @@ b {
   display: flex;
   flex-wrap: wrap;
   width: 200px;
-  height: 210px;
+  height: 200px;
   background-color: rgba(170, 243, 170, 0.486);
 }
 
 .clientes h4 {
-  border-bottom: 2px dashed green;
   text-align: center;
+  border-bottom: 2px dashed green;
   padding-bottom: 5px;
-}
-
-.clientes p {
-  text-align: justify;
 }
 
 .competidores {
@@ -406,7 +395,7 @@ b {
   display: flex;
   flex-wrap: wrap;
   width: 200px;
-  height: 210px;
+  height: 200px;
   background-color: rgba(212, 212, 212, 0.486);
 }
 
@@ -416,8 +405,10 @@ b {
   padding-bottom: 5px;
 }
 
-.competidores p {
-  text-align: justify;
+.middle-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .rivalidad {
@@ -426,20 +417,38 @@ b {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 300px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 290px;
   background-color: #83b5f17e;
 }
 
 .rivalidad h4 {
   border-bottom: 2px dashed var(--very-light-blue2);
-  text-align: center;
   padding-bottom: 5px;
   width: 100%;
+  text-align: center;
 }
 
 .rivalidad p {
+  padding-top: 15px;
+}
+
+.rivalidad p,
+.competidores p,
+.clientes p,
+.sustitutos p,
+.proveedores p {
+  font-size: 14px;
   text-align: justify;
-  padding-top: 7px;
+}
+
+.investigacion h4 {
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  color: var(--very-light-blue2);
+}
+
+.ul-investigacion {
+  padding-left: 4rem;
 }
